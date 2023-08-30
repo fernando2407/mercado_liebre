@@ -1,0 +1,411 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+head {
+    height: 100%;
+}
+
+header,
+footer {
+    background-color: #f2f2f2;
+
+}
+
+main{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+
+
+
+.banner-tamaño {
+    height: 100%;
+    width: 100%;
+}
+
+.descuentos {
+    font-size: 16px
+}
+
+.titulares {
+    font-size: 24px
+}
+
+.precios {
+    font-size: 18px;
+    color: green
+}
+
+.precios2 {
+    display: flex;
+    justify-content: start;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+.descripciones {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.letras-link {
+    color: none;
+    text-decoration: none;
+}
+
+ul {
+    text-decoration: none;
+}
+
+/***  ***/
+
+.contenedor-img {
+
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img-logo {
+
+    width: 20%;
+    height: 80px;
+}
+
+.barra {
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+}
+
+.burger-menu {
+    display: none;
+
+}
+
+.barra i {
+    font-size: 32px;
+}
+
+.buscar {
+    height: 40px;
+    width: 500px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.obciones {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+/*** ***/
+
+header {
+
+    background-color: #EAC926;
+}
+
+body {
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
+}
+
+.tamaño-logo {
+    width: 50px;
+    height: 50px;
+}
+
+.caja-pc {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: 0;
+
+}
+
+
+
+header .form .imput {
+    background-color: #ffffff;
+    border: 1px solid #000;
+    outline: none;
+    color: #666;
+    padding: 2px;
+}
+
+.burger-menu {
+    background-color: #1259c3;
+    font-size: 16px;
+    padding: 7px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/*** main  ***/
+
+div.textolegible {
+    margin: 10px 20px;
+    font-family: verdana, arial, helvetica;
+    line-height: 18px;
+    font-size: 10px;
+}
+
+.camiones {
+    text-align: center;
+    color: green;
+    font-size: 20px;
+    padding: 1px;
+    border-radius: 1px;
+    border-radius: 50px;
+    border: black;
+    border-color: #000;
+}
+
+
+.produpto {
+    text-align: center;
+    width: 90%;
+    margin: 10px;
+}
+
+.info-produp {
+
+    display: none;
+    padding: 10px;
+    background-color: #f2f2f2;
+
+}
+
+
+/***   ***/
+.img-produp {
+    width: 170px;
+    height: 200px;
+
+}
+
+.produpto:hover {
+    animation: sombra 4s infinite;
+
+}
+
+.produpto:hover i {
+
+    animation: girarnv 1.2s 1;
+
+}
+
+.produp2{
+    border-top: 4px solid #ebebeb;
+    background-color: white;
+    padding: 15px;
+    padding-bottom: 0px;
+}
+
+.produpto b {
+    opacity: 0%;
+}
+
+.produpto:hover b {
+    font-size: 16px;
+    color: #000000;
+    animation: opacidad 3s infinite;
+}
+
+
+.fondomain {
+    background-color: #ffffff;
+}
+
+
+
+/***footer*** */
+
+.info-footer {
+    text-align: center;
+}
+
+.info-footer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.tamañofooter {
+    height: auto;
+    width: 100%;
+}
+
+.logofooter {
+    text-align: center;
+}
+
+.icono:hover {
+    animation: colorfooter 1s 1;
+}
+
+.icono {
+    font-size: 2em
+}
+
+
+.fondo-logo {
+    background-color: #1259c3;
+}
+
+/***** animation  *******/
+
+
+
+@keyframes girarnv {
+    0% {
+        transform: rotate(0);
+    }
+
+    50% {
+        transform: rotate(-90deg);
+    }
+
+    100% {
+        transform: rotate(0);
+    }
+}
+
+@keyframes sombra {
+    0% {
+        box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.3);
+    }
+
+    50% {
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    99% {
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+    }
+
+}
+
+@keyframes opacidad {
+    0% {
+        opacity: 0%
+    }
+
+    100% {
+        opacity: 100%
+    }
+}
+
+@keyframes colorfooter {
+    0% {
+        color: #1259c3;
+    }
+
+    100% {
+        color: #EAC926;
+    }
+}
+
+/***** medidas de fono *****/
+
+
+@media (max-width: 768px) {
+
+
+
+    .contenedor-img {
+        gap: 20px;
+    }
+
+
+    .img-logo {
+
+        width: 40%;
+        height: 80px;
+    }
+
+
+    .buscar {
+        height: 20px;
+        width: 300px;
+    }
+
+    .buscar {
+        height: 40px;
+        width: 300 px;
+    }
+
+    .img-produp {
+        width: 250px;
+        height: 300px;
+
+    }
+
+    .letras-link {
+        color: #666;
+        text-decoration: none;
+        font-size: 15px;
+    }
+
+    .caja-pc {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 460px) {
+
+    .contenedor-img {
+
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .img-logo {
+
+        width: 50%;
+        height: 60px;
+    }
+
+    .buscar {
+        height: 20px;
+        width: 100px;
+    }
+
+    .barra i {
+        font-size: 16px;
+    }
+
+    .menu {
+        display: none;
+
+    }
+
+    .caja-pc {
+        flex-direction: column;
+    }
+
+    .info-footer {
+        text-align: center;
+        font-size: 10px;
+    }
+
+    .burger-menu {
+        display: inline-flex;
+        position: relative;
+        left: 46vw;
+        bottom: 15px;
+
+    }
+}
