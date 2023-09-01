@@ -117,9 +117,10 @@ header {
     max-width: 500px;
     margin:  40px auto;
     padding: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid grey;
     border-radius: 5px;
     position: relative;
+    background-color: grey;
     
     
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
@@ -145,6 +146,9 @@ header {
     border: 1px solid #ccc;
     border-radius: 5px;
 }
+#input-item{
+    display: none;
+}
 .form-group input[type="submit"] {
     display: block;
     width: 100%;
@@ -153,6 +157,9 @@ header {
     color: white;
     border-radius: 5px;
     cursor:pointer;
+}
+#link{
+    color: black;
 }
 .form-group input[type="reset"] {
     display: block;
